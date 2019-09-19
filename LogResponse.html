@@ -1,0 +1,70 @@
+<html>
+
+<head>
+	<title>SAC Embedding</title>
+	<style>
+		iframe {
+			width: 100%;
+			height: 900px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Log on Successful</h1>
+	<button type="button">Display Story</button>
+	<iframe id="attachframe"></iframe>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script>
+
+		$("button").click(function () {
+
+			var url = "https://<TENANT>/sap/fpa/ui/tenants/<TENANT_ID>/bo/story/<STORY_ID>"; 	    //<<<<<<<<<<<<<<<<<<<<< NEEDS TO BE ADJUSTED!
+			var data = {};
+
+			// 1.step: get the access token
+			$.ajax({
+				type: 'GET',
+				data: JSON.stringify(data),
+				contentType: 'application/json',
+				url: '/getToken',
+				success: function (data) {
+					console.log('success');
+					console.log(JSON.stringify(data));
+
+					var token_details = JSON.parse(data);
+
+					var postheaders = {
+						'Authorization': 'Bearer ' + token_details.access_token,
+					};
+
+					// 2. step: get the SAC story
+					$.ajax({
+						type: 'GET',
+						url: url,
+						contentType: 'application/json',
+						headers: postheaders,
+						xhrFields: {
+							withCredentials: true
+						},
+						success: function (data, status, settings) {
+							console.log(settings.getResponseHeader("X-CSRF-Token"));
+							console.log(JSON.stringify(data));
+
+							$("iframe").attr("src", url);
+						},
+
+						error: function (xhr, ajaxOptions, thrownError) {
+							alert(xhr.status);
+							alert(thrownError);
+						}
+					});
+				}
+			});
+		});
+
+	</script>
+</body>
+
+</html>
