@@ -60,5 +60,9 @@ This project is provided "as-is": there is no guarantee that raised issues will 
 <a name="license"></a>
 ## License
 
+
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/analytics-cloud-api-embed-story)](https://api.reuse.software/info/github.com/SAP-samples/analytics-cloud-api-embed-story)
+
+
 Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
 This project is licensed under the SAP Sample Code License, Version 1.0 except as noted otherwise in the [LICENSE](LICENSE) file.
