@@ -1,3 +1,5 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/analytics-cloud-api-embed-story)](https://api.reuse.software/info/github.com/SAP-samples/analytics-cloud-api-embed-story)
+
 # Embed an SAP Analytics Cloud Story in a Simple Web App – Sample
 <a name="top"></a>
 <!-- *********************************************************************** -->
@@ -61,7 +63,7 @@ This project is provided "as-is": there is no guarantee that raised issues will 
 ## License
 
 
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/analytics-cloud-api-embed-story)](https://api.reuse.software/info/github.com/SAP-samples/analytics-cloud-api-embed-story)
+
 
 
 Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
