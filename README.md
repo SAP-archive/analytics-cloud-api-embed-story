@@ -1,4 +1,6 @@
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/analytics-cloud-api-embed-story)](https://api.reuse.software/info/github.com/SAP-samples/analytics-cloud-api-embed-story)
+[![Not Maintained](https://img.shields.io/badge/Maintenance%20Level-Not%20Maintained-yellow.svg)](https://gist.github.com/cheerfulstoic/d107229326a01ff0f333a1d3476e068d)
+
 
 # Embed an SAP Analytics Cloud Story in a Simple Web App – Sample
 <a name="top"></a>
